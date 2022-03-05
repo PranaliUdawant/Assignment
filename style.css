@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 60%;
+    height: 100vh;
+    margin: 50px 0px 0px 300px;
+    display: grid;
+    grid-template-rows: 300px 300px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 60px;
+    justify-content: center;
+}
+.card1 , .card2,.card3 , .card4 , .card5  , .card6 , .card7{
+    height: 320px;
+    width: 170px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(168, 167, 167);
+    
+}
+.card1 img , .card2 img , .card3 img,.card4 img,.card5 img,.card6 img,.card7 img{
+    height: 100px;
+    width: 100px;
+    margin: 20px 35px 0px 35px;
+}
+p{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0px 0px 10px;
+    color: rgb(118, 126, 14);
+}
+h3{
+    margin:10px 0px 0px 10px; ;
+}
+button{
+    padding: 10px;
+    margin: 10px 0px 0px 20px;
+    background-color: orange;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+}
+button p{
+    display: inline;
+    color: black;
+    font-size: 15px;
+}
+
+
+/* media Query For Mobile  */
+@media(max-width:778px)
+{
+    .main
+    {
+       display: block;
+       margin: 50px 0px 0px 150px;
+    }
+    .card1 , .card2,.card3 , .card4 ,.card5,.card6,.card7{
+        margin: 40px 0px 0px 40px;
+    }
+
+}
